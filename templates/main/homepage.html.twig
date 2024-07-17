@@ -1,3 +1,11 @@
+{# Extending the base layout to our homepage #}
+{% extends 'base.html.twig' %}
+
+{# {{ parent() }} #}
+{% block title %}Starshop: Beam up some parts!{% endblock %}
+
+{% block body %}
+
 <h1>Startshop: your monopoly-busting option for Startship parts!</h1>
 
 <div>
@@ -39,3 +47,5 @@
         </tr>
     </table>
 </div>
+
+{% endblock %}

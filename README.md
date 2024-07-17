@@ -15,4 +15,7 @@ To start the *Symfony Server*: &nbsp; ```symfony server```
 ##
 
 [Symfony Recipes](https://github.com/symfony/recipes?tab=readme-ov-file)
+
 For returning HTML, we're using [Twig](https://twig.symfony.com/)
+
+[Symfony Skeleton](https://github.com/symfony/skeleton)
