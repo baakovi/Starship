@@ -1,4 +1,4 @@
-## Cosmic Coding - StartShop
+## Cosmic Coding - StarShip
 
 Learning the **Symfony** framework with [Symfony Casts](https://symfonycasts.com/tracks/symfony7).
 
