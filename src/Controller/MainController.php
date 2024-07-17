@@ -1,6 +1,7 @@
 <?php
 
 // Each class must have a 'namespace', normally is 'App' + '\' + 'something else inside'
+
 namespace App\Controller;
 
 // 'use' works like a function or 'import' on React (to understand better for myself)
