@@ -19,3 +19,5 @@ To start the *Symfony Server*: &nbsp; ```symfony server```
 For returning HTML, we're using [Twig](https://twig.symfony.com/)
 
 [Symfony Skeleton](https://github.com/symfony/skeleton)
+
+Symfony Profiler - ```composer require debug```
