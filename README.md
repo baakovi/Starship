@@ -20,4 +20,6 @@ For returning HTML, we're using [Twig](https://twig.symfony.com/)
 
 [Symfony Skeleton](https://github.com/symfony/skeleton)
 
-Symfony Profiler - ```composer require debug```
+**Symfony Profiler** - ```composer require debug```
+
+[Platform for creating API's](https://api-platform.com/)
