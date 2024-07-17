@@ -5,16 +5,30 @@
 namespace App\Controller;
 
 // 'use' works like a function or 'import' on React (to understand better for myself)
+
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 
 // Same name of the file!
-class MainController
+class MainController extends AbstractController
 {
     // PHP attribute - '/' means the first page
     #[Route('/')]
     public function homepage(): Response
     {
-        return new Response('<strong>Startshop</strong>: your monopoly-busting option for Startship parts!');
+        $starshipCount = 457;
+
+        $myShip = [
+            'name' => 'USS LeafyCruiser (NCC-0001)',
+            'class' => 'Garden',
+            'captain' => 'Jean-Luc Pickles',
+            'status' => 'under construction',
+        ];
+
+        return $this->render('main/homepage.html.twig', [
+            'numberOfStartships' => $starshipCount,
+            'myShip' => $myShip,
+        ]);
     }
 }
