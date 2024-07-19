@@ -2,7 +2,7 @@
 
 Learning the **Symfony** framework with [Symfony Casts](https://symfonycasts.com/tracks/symfony7).
 
-To start the *Symfony Server*: &nbsp; ```symfony server```
+To start the *Symfony Server*: &nbsp; ```symfony serve```
 
 ##
 

@@ -6,6 +6,7 @@ namespace App\Controller;
 
 // 'use' works like a function or 'import' on React (to understand better for myself)
 
+use App\Repository\StarshipRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
@@ -15,20 +16,15 @@ class MainController extends AbstractController
 {
     // PHP attribute - '/' means the first page
     #[Route('/')]
-    public function homepage(): Response
+    public function homepage(StarshipRepository $starshipRepository): Response
     {
-        $starshipCount = 457;
+        $ships = $starshipRepository->findAll();
 
-        $myShip = [
-            'name' => 'USS LeafyCruiser (NCC-0001)',
-            'class' => 'Garden',
-            'captain' => 'Jean-Luc Pickles',
-            'status' => 'under construction',
-        ];
+        $myShip = $ships[array_rand($ships)];
 
         return $this->render('main/homepage.html.twig', [
-            'numberOfStartships' => $starshipCount,
             'myShip' => $myShip,
+            'ships' => $ships,
         ]);
     }
 }

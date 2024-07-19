@@ -10,10 +10,10 @@
 
 <div>
     {# {{  }} <- is like a 'say something' syntax. #}
-    Browse through {{ numberOfStartships * 10 }} starships!
+    Browse through {{ ships|length * 10 }} starships!
 
     {# {% %} <- is like a 'do something syntax, language constructs or setting a variable. #}
-    {% if numberOfStartships > 400 %}
+    {% if ships|length > 2 %}
         <p>
             {# Do you think "shiploads" will pass the legal team? #}
             That's a shipload of ships!
